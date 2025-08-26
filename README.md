@@ -29,7 +29,7 @@ example content below:
 # .lefthook.yaml
 ---
 remotes:
-  - git_url: https://github.com/boozt-platform/lefthook.git
+  - git_url: https://github.com/yacosta738/lefthook.git
     ref: v1.3.0
     configs:
       # lint commit messages based by the conventional commits
@@ -110,10 +110,10 @@ please follow the [Contribution Guidelines][contributing]
 This project is licensed under the MIT. Please see [LICENSE][license] for
 full details.
 
-[homepage]: https://github.com/boozt-platform/lefthook
-[releases]: https://github.com/boozt-platform/lefthook/releases
-[issues]: https://github.com/boozt-platform/lefthook/issues
-[pull-request]: https://github.com/boozt-platform/lefthook/pulls
+[homepage]: https://github.com/yacosta738/lefthook
+[releases]: https://github.com/yacosta738/lefthook/releases
+[issues]: https://github.com/yacosta738/lefthook/issues
+[pull-request]: https://github.com/yacosta738/lefthook/pulls
 [contributing]: ./docs/CONTRIBUTING.md
 [license]: ./LICENSE
 [boozt]: https://www.boozt.com/
