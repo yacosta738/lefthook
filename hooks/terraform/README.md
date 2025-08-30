@@ -38,7 +38,7 @@ You can also run the Terraform commands directly using Lefthook:
 ```yaml
 # .lefthook.yaml
 remotes:
-  - git_url: git@github.com:boozt-platform/lefthook
+  - git_url: git@github.com:yacosta738/lefthook
     ref: [tag]
     configs:
       # terraform validation, fmt and tests

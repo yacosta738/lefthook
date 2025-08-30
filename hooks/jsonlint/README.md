@@ -14,7 +14,7 @@ the `git add`).
 ```yaml
 # .lefthook.yaml
 remotes:
-  - git_url: git@github.com:boozt-platform/lefthook
+  - git_url: git@github.com:yacosta738/lefthook
     ref: [tag]
     configs:
       # validate the JSON files

@@ -9,7 +9,7 @@ framework. For a full information take a look at CONTRIBUTING.md guideline
 ```yaml
 # .lefthook.yaml
 remotes:
-  - git_url: git@github.com:boozt-platform/lefthook
+  - git_url: git@github.com:yacosta738/lefthook
     ref: [tag]
     configs:
       # lint commit messages based by the conventional commits

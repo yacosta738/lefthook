@@ -9,7 +9,7 @@ files.
 ```yaml
 # .lefthook.yaml
 remotes:
-  - git_url: git@github.com:boozt-platform/lefthook
+  - git_url: git@github.com:yacosta738/lefthook
     ref: [tag]
     configs:
       # Check if the license headers are present in the files

@@ -10,7 +10,7 @@ For a full configuration and documentation [follow this link](https://github.com
 ```yaml
 # .lefthook.yaml
 remotes:
-  - git_url: git@github.com:boozt-platform/lefthook
+  - git_url: git@github.com:yacosta738/lefthook
     ref: [tag]
     configs:
       # lint the markdown (.md) files

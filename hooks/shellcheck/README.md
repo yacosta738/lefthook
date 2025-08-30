@@ -7,7 +7,7 @@ A shell script static analysis tool. [https://github.com/koalaman/shellcheck](ht
 ```yaml
 # .lefthook.yaml
 remotes:
-  - git_url: git@github.com:boozt-platform/lefthook
+  - git_url: git@github.com:yacosta738/lefthook
     ref: [tag]
     configs:
       # lint shell scripts

@@ -1,7 +1,7 @@
 <!-- markdownlint-disable -->
 [<img src="https://raw.githubusercontent.com/boozt-platform/branding/main/assets/img/platform-logo.png" width="350"/>][homepage]
 
-[![GitHub Tag (latest SemVer)](https://img.shields.io/github/v/tag/boozt-platform/lefthook.svg?label=latest&sort=semver)][releases]
+[![GitHub Tag (latest SemVer)](https://img.shields.io/github/v/tag/yacosta738/lefthook.svg?label=latest&sort=semver)][releases]
 [![license](https://img.shields.io/badge/license-mit-brightgreen.svg)][license]
 <!-- markdownlint-restore -->
 

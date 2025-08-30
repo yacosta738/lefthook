@@ -8,7 +8,7 @@ practices. [https://github.com/hadolint/hadolint](https://github.com/hadolint/ha
 ```yaml
 # .lefthook.yaml
 remotes:
-  - git_url: git@github.com:boozt-platform/lefthook
+  - git_url: git@github.com:yacosta738/lefthook
     ref: [tag]
     configs:
       # lint Dockerfiles
