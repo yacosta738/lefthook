@@ -5,6 +5,9 @@
 # https://yamllint.readthedocs.io/en/stable/configuration.html
 extends: default
 
+# Ignore specific files (regex). Exclude pnpm-lock.yaml from linting because it's a generated lockfile.
+ignore: '^pnpm-lock\.yaml$'
+
 yaml-files:
   - '*.yaml'
   - '*.yml'
