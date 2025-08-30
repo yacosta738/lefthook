@@ -30,7 +30,7 @@ example content below:
 ---
 remotes:
   - git_url: https://github.com/yacosta738/lefthook.git
-    ref: v1.3.0
+    ref: v1.0.0
     configs:
       # lint commit messages based by the conventional commits
       - hooks/commitlint/.lefthook.yaml
