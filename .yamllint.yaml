@@ -14,8 +14,6 @@ ignore: |
   **/vendor/**
   .git/**
 
-ignore-from-file: .gitignore
-
 yaml-files:
   - '*.yaml'
   - '*.yml'
