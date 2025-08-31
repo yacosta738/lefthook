@@ -11,7 +11,7 @@
 set -eo pipefail
 
 LICENSE_HEADER=${LICENSE_HEADER:-""}
-EXCLUDE_FILES_EXT=${EXCLUDE_FILES_EXT:-"LICENSE|\\.md|\\.gitignore|\\.license-checker.txt|CODEOWNERS|\\.gitattributes|\\.editorconfig|\\.json|\\.lock|\\.toml"}
+EXCLUDE_FILES_EXT=${EXCLUDE_FILES_EXT:-"LICENSE|\\.md|\\.gitignore|\\.license-checker.txt|CODEOWNERS|\\.gitattributes|\\.editorconfig|\\.json|\\.lock|\\.toml|lock\\.ya?ml"}
 STAGED_FILES=$(git diff --name-only --diff-filter=d --staged)
 
 # read .license-checker.txt file if exists in the root directory
