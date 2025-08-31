@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# SPDX-FileCopyrightText: Copyright Boozt Fashion, AB
+# SPDX-FileCopyrightText: Copyright Yuniel Acosta, CU
 # SPDX-License-Identifier: MIT
 
 # Script is a pre-commit hook to check if the staged files

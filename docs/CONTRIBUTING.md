@@ -107,7 +107,7 @@ To create a new hook, follow these steps:
 within license header as the following code below:
 
     ```yaml
-    # SPDX-FileCopyrightText: Copyright Boozt Fashion, AB
+    # SPDX-FileCopyrightText: Copyright Yuniel Acosta, CU
     # SPDX-License-Identifier: MIT
     ---
     pre-commit:
@@ -152,7 +152,7 @@ license comment block. This block should be added at the top of each
 source code file.
 
 ```text
-SPDX-FileCopyrightText: Copyright Boozt Fashion, AB
+SPDX-FileCopyrightText: Copyright Yuniel Acosta, CU
 SPDX-License-Identifier: MIT
 ```
 

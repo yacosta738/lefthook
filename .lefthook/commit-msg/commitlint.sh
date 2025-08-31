@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-# SPDX-FileCopyrightText: Copyright Boozt Fashion, AB
+# SPDX-FileCopyrightText: Copyright Yuniel Acosta, CU
 # SPDX-License-Identifier: MIT
 
 # Run commitlint.sh script to lint commit messages
 # based on the conventional commits specification.
 # https://www.conventionalcommits.org/en/v1.0.0/
-# 
+#
 # Create a new .commitlint configuration environment file
 # in the root project to override the default configuration.
 
