@@ -55,10 +55,9 @@ further defined and clarified by project maintainers.
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting [opensource@boozt.com](opensource@boozt.com), which is
+reported by contacting [others.premium.9@icloud.com](others.premium.9@icloud.com), which is
 a shared team inbox. If the incident involves someone who receives that shared
-inbox, you can contact an individual maintainer (@doniz) at
-```donnav``` + ```@boozt.com```. All complaints will be reviewed and
+inbox, you can contact an individual maintainer (@yacosta738) at others.premium.9@icloud.com. All complaints will be reviewed and
 investigated and will result in a response that is deemed necessary and
 appropriate to the circumstances. The project team is obligated to maintain
 confidentiality with regard to the reporter of an incident. Further details of

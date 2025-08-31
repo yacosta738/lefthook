@@ -1,5 +1,4 @@
 <!-- markdownlint-disable -->
-[<img src="https://raw.githubusercontent.com/boozt-platform/branding/main/assets/img/platform-logo.png" width="350"/>][homepage]
 
 [![GitHub Tag (latest SemVer)](https://img.shields.io/github/v/tag/yacosta738/lefthook.svg?label=latest&sort=semver)][releases]
 [![license](https://img.shields.io/badge/license-mit-brightgreen.svg)][license]
@@ -15,7 +14,6 @@ across all commits and deployments.
 
 - [How to Use It](#how-to-use-it)
 - [Available Hooks](#available-hooks)
-- [About Boozt](#about-boozt)
 - [Reporting Issues](#reporting-issues)
 - [Contributing](#contributing)
 - [License](#license)
@@ -72,21 +70,6 @@ analysis tool for *.md files.
   Generates documentation.
   - **pre-push**: Runs tests to ensure Terraform configurations are correct.
 
-## About Boozt
-
-Boozt is a leading and fast-growing Nordic technology company selling fashion
-and lifestyle online mainly through its multi-brand webstore [Boozt.com][boozt]
-and [Booztlet.com][booztlet].
-
-The company is focused on using cutting-edge, in-house developed technology to
-curate the best possible customer experience.
-
-With offices in Sweden, Denmark, Lithuania and Poland, we pride ourselves in
-having a diverse team, consisting of 1100+ employees and 38 nationalities.
-
-See our [Medium][blog] blog page for technology-focused articles. Would you
-like to make your mark by working with us at Boozt? Take a look at our
-[latest hiring opportunities][careers].
 
 ## Reporting Issues
 
@@ -116,7 +99,3 @@ full details.
 [pull-request]: https://github.com/yacosta738/lefthook/pulls
 [contributing]: ./docs/CONTRIBUTING.md
 [license]: ./LICENSE
-[boozt]: https://www.boozt.com/
-[booztlet]: https://www.booztlet.com/
-[blog]: https://medium.com/boozt-tech
-[careers]: https://careers.booztgroup.com/

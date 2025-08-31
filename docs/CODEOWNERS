@@ -1,13 +1,13 @@
 # docs documentation
-/docs/CODE_OF_CONDUCT.md @boozt-platform/owners
-/docs/CODEOWNERS.md @boozt-platform/owners
-/docs/CONTRIBUTING.md @boozt-platform/owners
-/docs/SECURITY.md @boozt-platform/owners
+/docs/CODE_OF_CONDUCT.md @yacosta738/owners
+/docs/CODEOWNERS.md @yacosta738/owners
+/docs/CONTRIBUTING.md @yacosta738/owners
+/docs/SECURITY.md @yacosta738/owners
 
 # .github documentation
-/.github/issue_template.md @boozt-platform/contributors
-/.github/pull_request_template.md @boozt-platform/contributors
+/.github/issue_template.md @yacosta738/contributors
+/.github/pull_request_template.md @yacosta738/contributors
 
 # CI
-/.github/workflows/release.yml @boozt-platform/owners
-/.goreleaser.yaml @boozt-platform/owners
+/.github/workflows/release.yml @yacosta738/owners
+/.goreleaser.yaml @yacosta738/owners
