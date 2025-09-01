@@ -21,18 +21,22 @@
 
 set -euo pipefail
 
-# validate input file
-if [ "$#" -lt 1 ] || [ ! -f "$1" ]; then
-    error "Usage: $0 <path-to-commit-msg-file>"
-    exit 1
-fi
-
 # error message function printing in red color
 # usage: error "message"
 error() {
     local message=${1:-""}
     echo -e "\033[0;31m${message}\033[0m"
 }
+
+# validate input file (avoid set -u pitfalls)
+if [ "$#" -lt 1 ]; then
+    error "Usage: $0 <path-to-commit-msg-file>"
+    exit 1
+fi
+if [ ! -f "${1:-}" ]; then
+    error "Commit message file not found: ${1:-<missing>}"
+    exit 1
+fi
 
 commitTitle=$(head -n1 "${1}")
 configurationFile=".commitlint"
