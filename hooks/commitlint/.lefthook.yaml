@@ -2,6 +2,9 @@
 # SPDX-License-Identifier: MIT
 ---
 commit-msg:
-  commands:
-    commitlint:
-      run: npx --no-install commitlint --edit {1}
+  parallel: true
+  scripts:
+    # Lint commit messages based by the conventional commits
+    # https://www.conventionalcommits.org/en/v1.0.0/
+    "commitlint.sh":
+      runner: bash
