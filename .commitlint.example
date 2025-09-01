@@ -1,0 +1,40 @@
+# SPDX-FileCopyrightText: Copyright Yuniel Acosta, CU
+# SPDX-License-Identifier: MIT
+
+# Example .commitlint configuration file
+# Copy this to .commitlint in your project root to customize commitlint behavior
+
+# Maximum length for commit messages (default: 80)
+MAX_COMMIT_MESSAGE_LENGTH=100
+
+# Valid commit types (default: build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)
+# You can add custom types like: wip, bump, etc.
+VALID_COMMIT_PREFIXES="build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test|wip|bump"
+
+# Allow emojis in commit messages (default: true)
+# When enabled, emojis are only allowed:
+# - In the title AFTER the colon (:)
+# - Anywhere in the commit body
+# Emojis are NOT allowed in type or scope
+ALLOW_EMOJIS=true
+
+# Examples of valid commits with this configuration:
+# ✅ feat: add new authentication system
+# ✅ feat(auth): 🎉 add OAuth2 support
+# ✅ feat(auth): implement JWT tokens 🔐
+# ✅ fix(api): resolve timeout issues 🐛
+# ✅ feat!: breaking change in API
+# ✅ feat(api)!: 💥 major API restructure
+# ✅ wip: work in progress on user dashboard
+#
+# ❌ 🎉 feat(auth): add OAuth2 support (emoji before type)
+# ❌ feat(🎉auth): add OAuth2 support (emoji in scope)
+# ❌ feat(auth🎉): add OAuth2 support (emoji in scope)
+#
+# In commit body, emojis are allowed anywhere:
+# feat: add new feature
+#
+# This is a detailed description 🎉
+# With emojis anywhere in the body 🚀
+# 
+# BREAKING CHANGE: This change breaks compatibility 💥
