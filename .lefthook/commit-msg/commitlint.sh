@@ -21,6 +21,12 @@
 
 set -euo pipefail
 
+# validate input file
+if [ "$#" -lt 1 ] || [ ! -f "$1" ]; then
+    error "Usage: $0 <path-to-commit-msg-file>"
+    exit 1
+fi
+
 # error message function printing in red color
 # usage: error "message"
 error() {
@@ -44,16 +50,16 @@ export VALID_COMMIT_PREFIXES=${VALID_COMMIT_PREFIXES:-"build|chore|ci|docs|feat|
 # allow emojis in commit messages
 export ALLOW_EMOJIS=${ALLOW_EMOJIS:-true}
 
+# check if the commit message contains merge patterns to skip validation
+if echo "$commitTitle" | grep -qE 'Merge (branch|pull request)'; then
+    echo "Skipping commit message check for merge commits"
+    exit 0
+fi
+
 # check commit message length
 if [ ${#commitTitle} -gt "${MAX_COMMIT_MESSAGE_LENGTH}" ]; then
     error "Your commit message is too long: ${#commitTitle} characters"
     exit 1
-fi
-
-# check if the commit message contains Merge Branch to skip the commit message check
-if echo "$commitTitle" | grep -qE 'Merge branch'; then
-    echo "Skipping commit message check for merge commits"
-    exit 0
 fi
 
 # check if the commit message is valid for semantic versioning

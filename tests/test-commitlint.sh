@@ -85,6 +85,12 @@ test_commit_message "unknown: add new feature" "fail" "Invalid type"
 test_commit_message "feat(very-long-scope-name): add feature" "pass" "Long scope name"
 test_commit_message "revert: let us never again speak of the noodle incident" "pass" "Revert commit"
 
+# Merge commit tests
+test_commit_message "Merge branch 'feature/auth' into main" "pass" "Merge branch commit"
+test_commit_message "Merge pull request #123 from user/feature-branch" "pass" "Merge pull request commit"
+test_commit_message "Merge branch 'very-long-feature-branch-name-that-exceeds-normal-commit-length-limits-significantly'" "pass" "Long merge branch commit"
+test_commit_message "Merge pull request #456 from contributor/extremely-long-feature-branch-name-that-would-normally-fail-length-validation" "pass" "Long merge pull request commit"
+
 # Multi-line commit (only testing first line)
 multiline_commit="feat: add new feature
 
