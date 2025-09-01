@@ -48,8 +48,42 @@ remotes:
       - hooks/terraform/.lefthook.yaml
 ```
 
-Run `lefthook install` (follow the [installation guide](https://github.com/evilmartians/lefthook/blob/master/docs/install.md)
-if the lefthook command is not present on the system).
+### Installation Steps
+
+1. **Install dependencies** for the hooks you want to use:
+
+   ```bash
+   # For commitlint
+   npm install --save-dev @commitlint/cli @commitlint/config-conventional
+   
+   # For markdown-lint  
+   npm install --save-dev markdownlint-cli
+   
+   # For jsonlint
+   npm install --save-dev jsonlint
+   ```
+
+2. **Install lefthook** (follow the [installation guide](https://github.com/evilmartians/lefthook/blob/master/docs/install.md)
+   if the lefthook command is not present on the system).
+
+3. **Install the hooks**:
+
+   ```bash
+   npx lefthook install
+   ```
+
+### Configuration Override
+
+You can override or extend any hook configuration locally by creating a `.lefthook-local.yaml` file:
+
+```yaml
+# .lefthook-local.yaml
+# Override commitlint rules
+commit-msg:
+  commands:
+    commitlint:
+      run: npx commitlint --edit {1} --config ./custom-commitlint.config.js
+```
 
 ## Available Hooks
 
