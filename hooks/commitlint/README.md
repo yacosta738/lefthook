@@ -34,6 +34,27 @@ npm install --save-dev @commitlint/cli @commitlint/config-conventional
 npx lefthook install
 ```
 
+4. **Copy the default commitlint configuration (if you don't have one)**:
+
+```bash
+# Option 1: Use the provided setup script
+bash .git/info/lefthook-remotes/lefthook*/hooks/commitlint/setup-commitlint.sh
+
+# Option 2: Copy manually
+cp .git/info/lefthook-remotes/lefthook*/hooks/commitlint/commitlint.config.js ./commitlint.config.js
+
+# Option 3: Create your own custom configuration
+cat > commitlint.config.js << 'EOF'
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+  rules: {
+    'header-max-length': [2, 'always', 120],
+    'body-max-line-length': [2, 'always', 220],
+  },
+};
+EOF
+```
+
 ### 🔄 Synchronizing Remote Configurations
 
 Lefthook automatically checks for updates in remote configurations. To manually force an update:
@@ -161,6 +182,15 @@ Ensure commitlint is installed locally in each project:
 
 ```bash
 npm install --save-dev @commitlint/cli @commitlint/config-conventional
+```
+
+### Configuration File Not Found
+
+If you get an error about missing configuration, ensure you have a `commitlint.config.js` file in your project root. You can copy it from the remote:
+
+```bash
+# After running lefthook install, copy the config
+cp .git/info/lefthook-remotes/lefthook*/hooks/commitlint/commitlint.config.js ./commitlint.config.js
 ```
 
 ### Git Worktrees Issues
