@@ -1,10 +1,10 @@
 # commitlint hook
 
-This hook checks if the commit message follows the conventional commits
-framework. For a full information take a look at CONTRIBUTING.md guideline
-(Updating Code section).
+This hook uses [commitlint](https://commitlint.js.org/) to check if commit messages follow the [Conventional Commits](https://www.conventionalcommits.org/) specification. The configuration is managed via Lefthook and the `commitlint.config.mjs` file at the project root.
 
 ## How to Use It
+
+Add the commitlint hook to your Lefthook configuration:
 
 ```yaml
 # .lefthook.yaml
@@ -12,31 +12,14 @@ remotes:
   - git_url: git@github.com:yacosta738/lefthook
     ref: [tag]
     configs:
-      # lint commit messages based by the conventional commits
+      # Lint commit messages using commitlint and the conventional commits standard
       - hooks/commitlint/.lefthook.yaml
 ```
 
+This will automatically run commitlint on every commit message to ensure it follows the conventional commit format.
+
 ## Configuration
 
-The script supports two environment variables that can be reconfigured. You
-can define the environment variables as follows:
+Commitlint is configured in the `commitlint.config.mjs` file at the project root. You can customize rules and extends as needed. See the [commitlint documentation](https://commitlint.js.org/#/reference-configuration) for more details.
 
-```shell
-# default values for environment variables
-export MAX_COMMIT_MESSAGE_LENGTH=80
-# valid commit prefix types for semantic versioning
-export VALID_COMMIT_PREFIXES="build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test"
-```
-
-Alternatively, you can create a `.commitlint` environment file in the project
-root, and the script will automatically source it:
-
-```bash
-# .commitlint
-
-# default values for environment variables
-MAX_COMMIT_MESSAGE_LENGTH=80
-
-# valid commit prefix types for semantic versioning
-VALID_COMMIT_PREFIXES="build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test"
-```
+For more information on the commit message guidelines, see the [CONTRIBUTING.md](../../../docs/CONTRIBUTING.md) file (Updating Code section).
